@@ -1,11 +1,11 @@
-import express from 'express'
+import express from "express";
 
 const app = express();
 
-app.get('/healthy', (__req, res) => {
-  res.send('Server is Healthy');
-})
+app.get("/healthy", (__req, res) => {
+	res.send("Server is Healthyyyyyyyyy");
+});
 
 app.listen(4000, () => {
-  console.log("Server running");
-})
+	console.log("Server running");
+});

@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  app-basic-express:
+    container_name: app-basic-express-fsd-online
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./:/app
+      - node_modules_api_basic_express:/app/node_modules
+
+volumes:
+  node_modules_api_basic_express:
